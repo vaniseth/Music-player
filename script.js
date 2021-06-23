@@ -30,7 +30,7 @@ function playSong(){
     playBtn.querySelector('i.fas').classList.remove('fa-play')
     playBtn.querySelector('i.fas').classList.add('fa-pause')
 
-    audio.play()
+    audio.play();
 }
 
 function pauseSong(){
@@ -38,7 +38,7 @@ function pauseSong(){
     playBtn.querySelector('i.fas').classList.add('fa-play')
     playBtn.querySelector('i.fas').classList.remove('fa-pause')
 
-    audio.pause()
+    audio.pause();
 }
 
 function prevSong(){
@@ -50,7 +50,7 @@ function prevSong(){
 
     loadSong(songs[songIndex])
 
-    playSong()
+    playSong();
 }
 
 function nextSong(){
@@ -62,7 +62,7 @@ function nextSong(){
 
     loadSong(songs[songIndex])
 
-    playSong()
+    playSong();
 }
 
 function updateProgress(e){
@@ -86,11 +86,11 @@ playBtn.addEventListener('click', ()=>{
     const isPlaying = musicContainer.classList.contains('play')
 
     if(isPlaying){
-        pauseSong()
+        pauseSong();
     }
 
     else{
-        playSong()
+        playSong();
     }
 })
 
