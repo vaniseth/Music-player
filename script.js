@@ -21,7 +21,7 @@ loadSong(songs[songIndex])
 //update song details
 function loadSong(song){
     title.innerText = song
-    audio.src=`music/${song}.mp3`
+    audio.src=`songs/${song}.mp3`
     cover.src=`images/${song}.png`
 }
 
@@ -103,3 +103,4 @@ audio.addEventListener('timeupdate', updateProgress)
 progressContainer.addEventListener('click', setProgress)
 
 audio.addEventListener('ended', nextSong)
+
