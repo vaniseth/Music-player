@@ -10,7 +10,7 @@ const cover = document.querySelector('#cover')
 
 //song titles
 
-const songs= ['Sitar', 'Violin', 'Piano']
+const songs= ['sitar', 'violin', 'piano']
 
 //keep track of the songs
 let songIndex = 2
